@@ -39,7 +39,7 @@ export const fetchLogin = async (body) => {
     const response = await axios.post(`${BACKEND_URL}/auth/login`, body);
     const token = response.data.token;
     await setToken(token);
-    console.log("logeada");
+    console.log("logeadooo");
   } catch (error) {
     throw error;
   }
@@ -168,5 +168,3 @@ export const deleteDriver = async (id) => {
     throw error;
   }
 };
-
-
